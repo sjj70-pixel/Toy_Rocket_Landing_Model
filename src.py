@@ -178,7 +178,6 @@ def Simulation(kx, ky, vx, vy):
 
 def Landing_Cost(kx, ky, vx, vy):
     # Creates a score so we can optimize the k values
-
     x, y, x_vals, y_vals, t_vals, vx, vy, step, time, crash, effort = Simulation(
         kx, ky, vx, vy
     )
@@ -196,7 +195,6 @@ def Log_Uniform(low, high):
 
 def Random_Search(trials, vx, vy, minx, maxx, miny, maxy):
     # Searches in a logarithmically uniform way a range to find optimal k values
-
     best_cost = float("inf")
     best_kx = None
     best_ky = None
